@@ -1,0 +1,57 @@
+1. Implementasikan rumus ruas lingkaran pada pemrograman dart.
+
+void main(){
+    
+    final phi = 3.14;
+    int r = 6;
+    double luas;
+    print(luas = phi*r*r);
+    
+}
+
+2. Buatlah 3 variabel yang berisi string lalu sambungkan seluruh string tersebut dan tampilkan dilayar.
+
+void main(){
+
+  String firstName = "Rizky";
+  String middleName = "alwan";
+  String lastName = "pratama";
+
+  print('$firstName $middleName $lastName');
+  
+}
+
+3. Tampilkan nilai faktorial dari :
+ a. faktorial 10
+	void main(){
+
+    int  hasil, i;
+
+    hasil = 1;
+    for(i=1; i<=10; i++){
+      hasil = hasil*i;
+    }
+    print(hasil);
+}
+   b. faktorial 20
+	void main(){
+
+    int  hasil, i;
+
+    hasil = 1;
+    for(i=1; i<=20; i++){
+      hasil = hasil*i;
+    }
+    print(hasil);
+}
+   c. faktorial 30
+	void main(){
+
+    int  hasil, i;
+
+    hasil = 1;
+    for(i=1; i<=30; i++){
+      hasil = hasil*i;
+    }
+    print(hasil);
+}
