@@ -1,1 +1,1 @@
-untuk mengumpulkan tugas pribadi
+Repository ini hanya untuk mengumpulkan tugas pribadi
