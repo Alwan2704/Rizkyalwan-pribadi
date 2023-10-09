@@ -1,0 +1,60 @@
+No 1
+void main (){
+    mobil m = new mobil();
+    Hewan h = new Hewan();
+
+    print("Kapasitas mobil : " + m.Kapasitas.toString());
+    print("List Hewan yang di angkut : " + m.muatan.toString());
+    print("Total Muatan  : " + m.totalMuatan().toString());
+
+    m.totalMuatan();
+    m.tambahMuatan();
+}
+
+class Hewan{
+    List<int>berat = [500,200];
+}
+
+class mobil extends Hewan{
+    var Kapasitas = 500;
+    var muatan = ["kucing, kelinci"];
+
+    tambahMuatan(){
+        if(Kapasitas >= totalMuatan()){
+            print("Hewan $muatan masuk ke kapasitas mobil");
+        }
+        else{
+            print("Hewan $muatan tidak masuk ke kapasitas mobil");
+        }
+    }
+    
+    totalMuatan(){
+        var total =0;
+        for (var i=0; i<berat.lenght; i++){
+            total += berat[i];
+        }
+        return total;
+    }
+}
+
+
+
+No 2
+void main() async {
+  List<int> data = [25, 30, 35];
+  int pengali = 3;
+  print("List : $data");
+  pengalian(data, pengali);
+  List<int> hasil = await pengalian(data, pengali):
+  print("List baru : $hasil");
+  }
+
+  Future<List<int>> pengalian(List<int> x, int y) async {
+    List<int> hasil = [];
+    await Future.delayed(Duration(seconds: 2));
+    await Future.forEach(x, (int List) async{
+      int hasilperulangan = List * y;
+      hasil.add(hasilperulangan);
+    });
+    return hasil;
+  }
